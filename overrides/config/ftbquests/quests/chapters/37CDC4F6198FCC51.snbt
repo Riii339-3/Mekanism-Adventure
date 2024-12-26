@@ -1,0 +1,75 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "37CDC4F6198FCC51"
+	group: "073E292D3BB9B5D4"
+	id: "37CDC4F6198FCC51"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4896B8B3A0CD93AC"]
+			hide_until_deps_complete: true
+			id: "3E857094CB70C495"
+			rewards: [{
+				count: 2
+				id: "15640083DB27344C"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			size: 3.0d
+			subtitle: "奴らに風穴を開けてきたわよ！"
+			tasks: [{
+				entity: "minecraft:pillager"
+				id: "2BB869DE9051B31A"
+				title: "こいつらは何を…"
+				type: "kill"
+				value: 1L
+			}]
+			title: "襲撃者の基地"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3E857094CB70C495"]
+			id: "00F887CB84AD1738"
+			rewards: [{
+				count: 2
+				id: "327EBD7CC9F8394E"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "やはりやつらが…"
+			tasks: [{
+				id: "382ECA86C3140144"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			title: "奪取できたもの"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E857094CB70C495"]
+			id: "359A19FE08DA657E"
+			rewards: [{
+				count: 5
+				id: "4E6BAF896F9907B9"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "どこかの伍長みたいにはならないだろう…"
+			tasks: [{
+				advancement: "minecraft:adventure/voluntary_exile"
+				criterion: ""
+				id: "62B749B0B3227A4C"
+				title: "復讐…いやないな"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+	]
+	title: "前哨基地"
+}

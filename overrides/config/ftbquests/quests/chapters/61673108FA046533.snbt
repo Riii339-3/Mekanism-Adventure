@@ -1,0 +1,270 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "61673108FA046533"
+	group: "3A1F513BADF08361"
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
+	id: "61673108FA046533"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["614EB3595D7A6855"]
+			description: [
+				"地下へ行く方法はたくさんあるが、おすすめは&l採掘すること&rと&l洞窟に行くこと&rだ。"
+				"採掘場は拠点近くに作ることができるので楽に行き来できる。"
+				"洞窟はモンスターなどがいるため力試しをすることができる。"
+				"好きな方を選ぶとよい。"
+			]
+			id: "3D615A53948C4E89"
+			size: 3.0d
+			subtitle: "洞窟？だるい。採掘？だるい。"
+			tasks: [{
+				id: "49886C03FB7C0B54"
+				title: "地下への行き方"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3D615A53948C4E89"]
+			id: "529EE9FF5B8A576E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "525C5DA599CD95D7"
+				table_id: 6235827042162665526L
+				type: "choice"
+			}]
+			subtitle: "鉄は大量に、石炭も大量に、オスミウムも大量に"
+			tasks: [
+				{
+					count: 3L
+					id: "77125460A66FBD17"
+					item: { Count: 3, id: "minecraft:raw_iron" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1C533190D6D245CB"
+					item: { Count: 3, id: "minecraft:coal" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "192BB4C29B5E79F6"
+					item: { Count: 3, id: "mekanism:raw_osmium" }
+					type: "item"
+				}
+			]
+			title: "必要なもの3種の神器"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["529EE9FF5B8A576E"]
+			id: "6918CA40F7803DB1"
+			rewards: [{
+				id: "0AE9492A101023DF"
+				item: {
+					Count: 1
+					id: "minecraft:iron_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "鉄製ツールは…ネタ絶えた。"
+			tasks: [
+				{
+					id: "59CC2F55B476D517"
+					item: {
+						Count: 1
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "075777DE125002BA"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "鉄にアップグレード！"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6918CA40F7803DB1"]
+			id: "3CA8AE7268D3F156"
+			rewards: [{
+				id: "209DC86273EA17EF"
+				item: {
+					Count: 1
+					id: "minecraft:shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "生身で戦うのは危険なのだよ、ワトソン君。"
+			tasks: [
+				{
+					id: "320B809F5BE9474D"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "40F416631670F497"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2731E635333C28FE"
+					item: {
+						Count: 1
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "290FEFA045D4AE04"
+					item: {
+						Count: 1
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "防具を作ろう！"
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6918CA40F7803DB1"]
+			id: "4BAEA9278F277696"
+			rewards: [{
+				id: "41CFA3C4E4BB9A55"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			subtitle: "クエスト名が雑になってきてるな"
+			tasks: [{
+				id: "3FF02B7A619AA6BB"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			title: "水を汲もう！"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6918CA40F7803DB1"]
+			id: "3FB0EE123FC0CEC7"
+			subtitle: "多分弱い"
+			tasks: [{
+				id: "58EBAC90BE95AF5E"
+				item: {
+					Count: 1
+					id: "minecraft:shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "ハサミがあれば怖くない！(当社比)"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3FB0EE123FC0CEC7"]
+			id: "23965715F38F9A31"
+			subtitle: "ふかふかのベッドにもぐりこむ。なんという至福なのだろうか。"
+			tasks: [{
+				id: "0659DDCD0416D268"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+				title: "Any #minecraft:wool"
+				type: "item"
+			}]
+			title: "これで寝れるぜ！"
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4BAEA9278F277696"]
+			id: "142E16568727FF87"
+			rewards: [{
+				count: 10
+				id: "5266E54024C79E13"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			subtitle: "既にやってそう"
+			tasks: [{
+				advancement: "minecraft:husbandry/plant_seed"
+				criterion: ""
+				id: "2C6F9CFAA5901F92"
+				title: "しっかりとした農業の開始"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"23965715F38F9A31"
+				"142E16568727FF87"
+				"3CA8AE7268D3F156"
+			]
+			id: "099375728F3AD844"
+			size: 3.0d
+			subtitle: "これで冒険に出かけられるぜ！！！"
+			tasks: [{
+				id: "5591BB83345F322A"
+				title: "準備完了！"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+	]
+	title: "始まりの地下"
+}

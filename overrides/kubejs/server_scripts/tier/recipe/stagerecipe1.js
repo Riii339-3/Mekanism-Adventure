@@ -1,0 +1,2 @@
+AStages.addRestrictionForRecipe("mek/tier1/1","basic","mekanism:metallurgic_infusing","mekanism:control_circuit/basic")
+AStages.addRestrictionForRecipe("mek/tier1/2","basic","minecraft:crafting","mekanism:steel_casing")

@@ -1,0 +1,173 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "614EB3595D7A6855"
+	group: "3A1F513BADF08361"
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
+	icon: {
+		Count: 1
+		id: "minecraft:stone_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "614EB3595D7A6855"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["127C58D4F0FD0623"]
+			description: [
+				"肝試しなわけありません。実戦です。"
+				"この世界にはモンスターが湧きます。既に別世界に訪問した記憶があればわかるかもしれませんが。"
+				"うーん、説明って難しいですね！戦いは慣れです！実践です！今すぐ戦いましょう！"
+			]
+			hide_text_until_complete: true
+			id: "680067505F110181"
+			size: 3.0d
+			subtitle: "肝試しでもするのか？そんなもん余裕だが。"
+			tasks: [{
+				id: "076D0F4362002487"
+				title: "最初の夜"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["680067505F110181"]
+			description: [
+				"武器には大まかに2種類あります。"
+				"1つ目は剣です。攻撃速度が早めで、瞬発的な攻撃に向いています。"
+				"2つ目は斧です。攻撃速度が遅い代わりに、重い攻撃を行えます。"
+				"どちらが優れているかはわかりませんが、時と場合によって使い分けるのがいいでしょう。ただし、斧は耐久が早く減ってしまうことに注意してください。"
+			]
+			hide_text_until_complete: false
+			id: "5414301A548D18B9"
+			subtitle: "石製？よっわ"
+			tasks: [{
+				id: "674F96B12F21D86A"
+				item: {
+					Count: 1
+					id: "minecraft:stone_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "武器は自分で作るもの"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5414301A548D18B9"]
+			id: "09B5895156C24E10"
+			rewards: [{
+				count: 2
+				id: "2FBE499897AC5B8B"
+				item: "minecraft:rotten_flesh"
+				random_bonus: 3
+				type: "item"
+			}]
+			subtitle: "ゾンビは近接メインの敵だが数が多い。油断は命とりになるだろう。"
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "4A45940144BA898E"
+				title: "討伐クエスト：ゾンビ"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5414301A548D18B9"]
+			id: "7CA7AF2BB65FFAE5"
+			rewards: [{
+				count: 2
+				id: "2BD8E23E5502435C"
+				item: "minecraft:bone"
+				random_bonus: 3
+				type: "item"
+			}]
+			subtitle: "スケルトンは弓を使って遠くから撃ってくる。1体だけでも大変である。"
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "5C31311A80CE45A3"
+				title: "討伐クエスト：スケルトン"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5414301A548D18B9"]
+			hide_text_until_complete: false
+			id: "19FB013B8C4246C9"
+			rewards: [{
+				count: 2
+				id: "42E7B1AFA6F905DD"
+				item: "minecraft:string"
+				random_bonus: 3
+				type: "item"
+			}]
+			subtitle: "クモは近づいてきて近接で襲ってくる。厄介な敵だ。"
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "08E784C1B5AEE0E8"
+				title: "討伐クエスト：クモ"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5414301A548D18B9"]
+			id: "22EC44E91C6DAFE9"
+			rewards: [{
+				count: 2
+				id: "5AE6EAD11969D24E"
+				item: "minecraft:gunpowder"
+				random_bonus: 3
+				type: "item"
+			}]
+			subtitle: "クリーパーは近づいてきて自爆する。一撃で死ぬし拠点にも被害が出るのでヒットアンドアウェイで倒そう。"
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "4BBA088FC57B4321"
+				title: "討伐クエスト：クリーパー"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"19FB013B8C4246C9"
+				"22EC44E91C6DAFE9"
+				"7CA7AF2BB65FFAE5"
+				"09B5895156C24E10"
+			]
+			description: [
+				"おそらく戦っているうちに気づいたことがあるだろう。そう、子どもモンスターの存在に。"
+				"彼らはちっちゃく攻撃が当たりづらい。しっかり狙わないと逃げられるだろう。子どもだからと言って手加減してはいけない。"
+			]
+			id: "34B6E8E1C9C0BC0E"
+			size: 2.0d
+			subtitle: "厳しかったかな？楽だったかな？"
+			tasks: [{
+				id: "410D1C8C183C5317"
+				title: "最初の戦闘、終わり！"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+	]
+	title: "夜の戦い"
+}

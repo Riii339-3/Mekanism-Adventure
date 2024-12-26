@@ -1,0 +1,330 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6326D04BA8F8B891"
+	group: "05FE856232C74F87"
+	hide_quest_until_deps_visible: true
+	id: "6326D04BA8F8B891"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["61673108FA046533"]
+			hide_until_deps_complete: true
+			id: "192AA1D455919B8B"
+			rewards: [{
+				count: 4
+				id: "390FC53730E8D163"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			size: 3.0d
+			subtitle: "燃料って大量にあっても困らないのでね…"
+			tasks: [{
+				count: 64L
+				id: "6102FB821FBD11FB"
+				item: { Count: 64, id: "minecraft:coal" }
+				type: "item"
+			}]
+			title: "燃料の確保"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["192AA1D455919B8B"]
+			id: "4866950BCB5DF202"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A833AB287126282"
+				table_id: 3299046745190296390L
+				type: "choice"
+			}]
+			subtitle: "一気に数が増えたな！？"
+			tasks: [
+				{
+					count: 32L
+					id: "7D351F0FE36BA64C"
+					item: { Count: 32, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "01B66357FED5A276"
+					item: { Count: 64, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "7B3C04FB2E399598"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/tin)"
+						}
+					}
+					title: "Any #forge:ingots/tin"
+					type: "item"
+				}
+			]
+			title: "資源なんてなんぼあってもいいですからね～"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4866950BCB5DF202"]
+			id: "05D773E3EC59D33E"
+			subtitle: "ハンマーとかいうもの"
+			tasks: [{
+				id: "7DAEB9BFA3EAE402"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/hammers)"
+					}
+				}
+				title: "Any #forge:tools/hammers"
+				type: "item"
+			}]
+			title: "カン！"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["05D773E3EC59D33E"]
+			id: "6DB9F0EDD0B7527A"
+			rewards: [{
+				count: 4
+				id: "0778D3F86C0C4CE5"
+				item: "minecraft:brick"
+				type: "item"
+			}]
+			subtitle: "ななななんだこれは！？"
+			tasks: [{
+				id: "27B27A88E8424687"
+				item: "energizedpower:alloy_furnace"
+				type: "item"
+			}]
+			title: "合金炉の作成"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6DB9F0EDD0B7527A"]
+			hide_until_deps_complete: true
+			id: "4D2EE0DF3214E6F2"
+			subtitle: "でもダイヤには劣りそう"
+			tasks: [{
+				id: "1B2C7233A0A59A5C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/steel)"
+					}
+				}
+				title: "Any #forge:ingots/steel"
+				type: "item"
+			}]
+			title: "鉄よりもすごそう"
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6DB9F0EDD0B7527A"]
+			hide_until_deps_complete: true
+			id: "64E49C9C3BE4AB49"
+			subtitle: "でも金よりは劣りそう"
+			tasks: [{
+				id: "39870ED18A782922"
+				item: "mekanism:ingot_bronze"
+				type: "item"
+			}]
+			title: "銅よりもすごそう"
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4D2EE0DF3214E6F2"]
+			id: "3522626916E82B1D"
+			subtitle: "古代文献によれば、工業学校で最初に習うものがこれらしいが、真偽は不明"
+			tasks: [{
+				id: "647CD2CB8E447A0D"
+				item: "energizedpower:basic_machine_frame"
+				type: "item"
+			}]
+			title: "文明復興への第一歩"
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3522626916E82B1D"]
+			id: "307EA05813011C80"
+			subtitle: "古代の偉人はこのエンジンを使いこなしている"
+			tasks: [{
+				id: "349608478CA92A2D"
+				item: "energizedpower:coal_engine"
+				type: "item"
+			}]
+			title: "火力発電"
+			x: -3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3522626916E82B1D"]
+			id: "13081FCC74FB1766"
+			subtitle: "大セールだよ！今なら自作でなんと無料！"
+			tasks: [{
+				id: "65D4AA59A4C7B773"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			title: "強化された部品"
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"13081FCC74FB1766"
+				"307EA05813011C80"
+			]
+			id: "153B016BE0D15120"
+			subtitle: "これがあれば！"
+			tasks: [{
+				id: "58EEAE2F46AFB263"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			title: "発展していく合金"
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["307EA05813011C80"]
+			id: "050499E2C235FE19"
+			subtitle: "熱で発電しているのでは！？"
+			tasks: [{
+				id: "5F0DB2C011009CBF"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			title: "エンジンが熱い…これはもしや…"
+			x: -5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"153B016BE0D15120"
+				"67F3587EFA1375B8"
+			]
+			hide_until_deps_complete: true
+			id: "0871820DC5113EF0"
+			subtitle: "これで一歩近づいた！！"
+			tasks: [{
+				id: "37914D839B41650A"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			title: "うわああああ合金だあああああ"
+			x: -3.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"153B016BE0D15120"
+				"019221149AEF0C35"
+			]
+			hide_until_deps_complete: true
+			id: "1846C745E9AFCA7E"
+			subtitle: "これで一歩近づく！"
+			tasks: [{
+				id: "65CD1CB02A5145CC"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			title: "うわああああ回路だあああああ"
+			x: -2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["307EA05813011C80"]
+			hide_until_deps_complete: true
+			icon: "industrialforegoing:fluid_extractor"
+			id: "330BE68AA4AB3E00"
+			rewards: [{
+				id: "1FCFA5A1A0970E9F"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			subtitle: "もしかして水と溶岩以外のもある？"
+			tasks: [
+				{
+					id: "317153BD9ACB7A2F"
+					item: "industrialforegoing:fluid_extractor"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "32F6922962413CEF"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+			]
+			title: "液体…"
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0871820DC5113EF0"
+				"1846C745E9AFCA7E"
+			]
+			hide_until_deps_complete: true
+			id: "61C5BFC92A35A642"
+			size: 3.0d
+			subtitle: "これらの素材は、すべての基礎である"
+			tasks: [{
+				id: "0819F00AE5C6EA87"
+				title: "文明、再び"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["307EA05813011C80"]
+			id: "77544E862DF6B616"
+			subtitle: "…あれ？遅い？"
+			tasks: [{
+				id: "076CE7FF3EF672A8"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			title: "電気で動くかまど！？"
+			x: -4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["330BE68AA4AB3E00"]
+			id: "268D962661C9A081"
+			subtitle: "ラテックスと名付けよう"
+			tasks: [{
+				id: "2EA9557FC9BE8D11"
+				item: "industrialforegoing:latex_bucket"
+				type: "item"
+			}]
+			title: "白い濁った液体…"
+			x: -7.0d
+			y: 8.5d
+		}
+	]
+	title: "今を力強く"
+}
