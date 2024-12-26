@@ -1,0 +1,68 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5DA3E8CBA89DBCE9"
+	group: "529C2723C1FA53F5"
+	hide_quest_until_deps_complete: true
+	id: "5DA3E8CBA89DBCE9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["61673108FA046533"]
+		id: "348029D32FF9561F"
+		rewards: [{
+			count: 8
+			id: "7387D0B8B64A3C80"
+			item: "minecraft:raw_iron"
+			type: "item"
+		}]
+		size: 3.0d
+		subtitle: "大量に鉱石があるじゃん！掘れ掘れ！"
+		tasks: [
+			{
+				id: "4C8D93003D891F63"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}
+			{
+				id: "38EA1FAD75205246"
+				item: "minecraft:raw_gold"
+				type: "item"
+			}
+			{
+				id: "2BE407E2A4F1DB19"
+				item: "mekanism:raw_tin"
+				type: "item"
+			}
+			{
+				id: "07B85A8F40B50EA1"
+				item: "mekanism:raw_lead"
+				type: "item"
+			}
+			{
+				id: "3C261394D8DAEE1B"
+				item: "mekanism:raw_uranium"
+				type: "item"
+			}
+			{
+				id: "5A612C5331FF96D4"
+				item: "minecraft:redstone"
+				type: "item"
+			}
+			{
+				id: "12319D0DF42A8FFF"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}
+			{
+				id: "6676946BFA5C6141"
+				item: "minecraft:diamond"
+				type: "item"
+			}
+		]
+		title: "さらなる鉱石を求めて"
+		x: 0.5d
+		y: -1.5d
+	}]
+	title: "どんどん地下へ"
+}

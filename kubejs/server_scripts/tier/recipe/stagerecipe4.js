@@ -1,0 +1,2 @@
+AStages.addRestrictionForRecipe("mek/tier4/1","ultimate","minecraft:crafting","mekanism:control_circuit/ultimate")
+AStages.addRestrictionForRecipe("mek/tier4/2","ultimate","minecraft:crafting","mekanism:chenical_injection_chamber")

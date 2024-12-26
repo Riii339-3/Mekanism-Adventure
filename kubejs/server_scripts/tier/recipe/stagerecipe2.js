@@ -1,0 +1,2 @@
+AStages.addRestrictionForRecipe("mek/tier2/1","advanced","minecraft:crafting","mekanism:control_circuit/advanced")
+AStages.addRestrictionForRecipe("mek/tier2/2","advanced","minecraft:crafting","mekanism:energy_tablet")

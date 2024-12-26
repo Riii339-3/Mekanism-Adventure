@@ -1,0 +1,78 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "79E80CB2D84A009C"
+	group: "073E292D3BB9B5D4"
+	hide_quest_until_deps_complete: true
+	id: "79E80CB2D84A009C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["61673108FA046533"]
+			id: "1949305DE44A6103"
+			subtitle: "村に来たらどうするの？"
+			tasks: [{
+				id: "19859740203042A6"
+				structure: "#minecraft:village"
+				title: "村に到着"
+				type: "structure"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["61673108FA046533"]
+			id: "4896B8B3A0CD93AC"
+			subtitle: "昔にとらわれたかわいそうな人々"
+			tasks: [{
+				id: "39DF27C8426687B9"
+				structure: "minecraft:pillager_outpost"
+				title: "前哨基地を探す"
+				type: "structure"
+			}]
+			title: "前哨基地を探す"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["61673108FA046533"]
+			id: "6D2D96ADCD054F25"
+			tasks: [{
+				id: "4A0685E1BA1CED93"
+				structure: "minecraft:jungle_pyramid"
+				title: "ジャングルの寺院"
+				type: "structure"
+			}]
+			title: "ジャングルの寺院を探す"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["61673108FA046533"]
+			id: "6B5FF2C93FCB18BA"
+			tasks: [{
+				id: "140485BC0A85EABE"
+				structure: "minecraft:desert_pyramid"
+				title: "砂漠の寺院を探す"
+				type: "structure"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["61673108FA046533"]
+			id: "699B525A46F9237C"
+			subtitle: "一般通過村人ニキ曰く、薄暗く出不気味な場所らしい"
+			tasks: [{
+				id: "6C8FD69BBE988A02"
+				structure: "minecraft:mineshaft"
+				title: "廃坑を探す"
+				type: "structure"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+	]
+	title: "新天地記録"
+}

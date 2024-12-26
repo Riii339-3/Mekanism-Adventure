@@ -1,0 +1,326 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "127C58D4F0FD0623"
+	group: "3A1F513BADF08361"
+	hide_quest_until_deps_visible: true
+	icon: "minecraft:oak_log"
+	id: "127C58D4F0FD0623"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"この世界で君は何をしたい？強くなって無双したい！核兵器作って世界滅ぼしたい！村人の幸せを願いたい！そんな思いをかなえる旅を始めよう！"
+				"でもこの世界は残酷だ。夜になるとモンスターが現れるし、古代文明の生き残りは自尊心が高く、新人類を襲撃し略奪している。さらに、ごくまれに血の夜が発生することがある。その日は恐怖で眠ることができず、むやみに外に出ると通常よりも多いモンスターに出会うことになる。"
+				"でも…君は古代文明で住んでいた前世の記憶を持っている。だけど技術がない。"
+				"それじゃあ対抗することができない。そんな君には鑑定を与えよう。鑑定はアイテムを手に入れるとその作り方がわかるというものだ。そして古代文明の遺産は各地に散らばっている。それらを見つけ出し、吸収し、発展していくことで、より良い未来が形作られるだろう。"
+				"突然おのれGregと叫びだすかもしれない。それでも君は乗り越えられるさ。"
+			]
+			id: "7DFF5BFC571B20A7"
+			rewards: [
+				{
+					id: "1B0307FA851D1BD4"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "773D1ACAE645301B"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D16EAD69A5F00B7"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "さぁ、君だけの物語を始めよう！"
+			tasks: [{
+				id: "062A8CB4B97BC348"
+				title: "私だけの物語"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"7DFF5BFC571B20A7"
+				"26F106DE287D1815"
+				"0A3857F6E7D1F9A4"
+			]
+			id: "31590E5B21331B7A"
+			rewards: [
+				{
+					count: 4
+					id: "3BD75FF1C47C65DB"
+					item: "minecraft:stick"
+					type: "item"
+				}
+				{
+					id: "3969BA5028FF7CA9"
+					item: "minecraft:apple"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "木は重要だぞ。むやみに切らず再生させるんだ。"
+			tasks: [{
+				count: 4L
+				id: "7A59B14603D6039F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "木がないと始まらない！"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["31590E5B21331B7A"]
+			icon: "minecraft:cobblestone"
+			id: "4DD2993D4491DE70"
+			subtitle: "石はどこにもあると思った？普通の石しか使えないのだよ…"
+			tasks: [{
+				id: "6058C19DF02F6CF6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:stone_crafting_materials)"
+					}
+				}
+				title: "Any #forge:cobblestone/normal"
+				type: "item"
+			}]
+			title: "石を集める"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"この世界には&lFTB Ultimine&r俗称&l一括破壊&rが存在する。これを使うことで一括で階段掘りできだり、原木だけを一括で破壊できたり、鉱石を一括で掘れたりなどさまざまである。"
+				"発動方法だが…おそらくあなたの手元にはGoogleが存在するだろう。それはインターネットを駆使してさまざまな事象を調べることができる。詳しく知りたいのであればそれを使うとよいだろう。"
+			]
+			id: "26F106DE287D1815"
+			subtitle: "FTB Ultimineだけで伝わってくれたらうれしい"
+			tasks: [{
+				id: "1C27015DAB4FC1C0"
+				title: "特殊魔法：一括破壊"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			description: [
+				"食料がないと走れなくなってしまう。しっかりお腹を満たそう・"
+				"肉は焼くことでおいしく頂ける。しっかり焼いて食べよう。"
+				"もしあなたが砂漠に降り立ったのであれば、ウサギを狩ることをお勧めする。"
+				"おっと、探索してたら食料が尽きちゃった？大丈夫、この世界はまだ国という概念が存在しない。村の近くでもそこらへんにいる豚や牛を狩ればいいだろう。"
+				"ん？宗教を信仰しているから豚肉や牛肉が食べられない？なるほど、難しいですね…あきらめてください。"
+			]
+			id: "0A3857F6E7D1F9A4"
+			subtitle: "前世でもそうだったでしょ？"
+			tasks: [{
+				id: "17B088CA9058C288"
+				title: "食料も重要！"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["31590E5B21331B7A"]
+			id: "1F6981E825D33AEF"
+			rewards: [{
+				count: 5
+				id: "32168CD359E7EC91"
+				item: "minecraft:apple"
+				type: "item"
+			}]
+			subtitle: "拠点を作るには大量に必要でしょ？"
+			tasks: [
+				{
+					count: 64L
+					id: "719174B2F6C4E190"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)"
+						}
+					}
+					title: "木材がたくさんあるよ！"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "76F6D5AD5C181BAC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "原木もたくさんあるよ！"
+					type: "item"
+				}
+			]
+			title: "木材をもっと！！"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DD2993D4491DE70"]
+			icon: { Count: 64, id: "minecraft:cobblestone" }
+			id: "207441EFA1DF190D"
+			rewards: [{
+				count: 16
+				id: "4BAE57D88954AD57"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			subtitle: "丸石と石は違うことを意識しましょう。でもめんどいよね。"
+			tasks: [{
+				id: "1D70CB0997F6235F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:stone_crafting_materials"
+					}
+				}
+				title: "丸石って後半は無限になるよ(ネタバレ)"
+				type: "item"
+			}]
+			title: "石をもっと！"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1F6981E825D33AEF"]
+			id: "38734EEEB824157E"
+			rewards: [{
+				count: 32
+				id: "316F431AD3C563B1"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			subtitle: "多分いらない"
+			tasks: [{
+				count: 64L
+				id: "439FE769ABBBD22C"
+				item: { Count: 64, id: "minecraft:stick" }
+				title: "ぼーっとしている棒"
+				type: "item"
+			}]
+			title: "こんなに棒はいるのだろうか"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"38734EEEB824157E"
+				"207441EFA1DF190D"
+			]
+			id: "7B01C6EA91DFDE41"
+			rewards: [{
+				id: "318EC442D6A5A9FA"
+				item: {
+					Count: 1
+					id: "minecraft:stone_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "次は…鉄器時代！？"
+			tasks: [
+				{
+					id: "1950E42D3E0FA7DE"
+					item: {
+						Count: 1
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "548B3B20A4785D35"
+					item: {
+						Count: 1
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "74394418099EFB93"
+					item: {
+						Count: 1
+						id: "minecraft:stone_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "アップグレード！"
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7B01C6EA91DFDE41"]
+			description: [
+				"お疲れさまでした。拠点ができたあなたはもうすでに冒険の準備ができたといっても過言ではありません。"
+				"質問なのですが、実戦経験はありますかね？あるのであれば次の章は一瞬で終わると思います。やったね！"
+			]
+			icon: "sophisticatedstorage:crafting_upgrade"
+			id: "24B02992C25C2D5D"
+			size: 3.0d
+			subtitle: "40秒で拠点を作るのは無理である。"
+			tasks: [{
+				id: "2C97FF18C48AFBD6"
+				title: "40秒で支度しな！！！"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 7.5d
+		}
+	]
+	title: "最初の一歩"
+}

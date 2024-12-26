@@ -1,0 +1,2 @@
+AStages.addRestrictionForRecipe("mek/tier-1/1","infused","mekanism:metallurgic_infusing","mekanism:metallurgic_infusing/alloy/infused")
+AStages.addRestrictionForRecipe("mek/tier-1/2","infused","minecraft:crafting","energizedpower:coal_engine")

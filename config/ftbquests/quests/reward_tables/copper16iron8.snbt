@@ -1,0 +1,11 @@
+{
+	id: "2DC891892079EB46"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 8, item: "minecraft:iron_ingot" }
+		{ count: 16, item: "minecraft:copper_ingot" }
+		{ count: 8, item: "mekanism:ingot_tin" }
+	]
+	title: "copper16iron8"
+}

@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "3A1F513BADF08361", title: "冒険の始まり" }
+		{ id: "529C2723C1FA53F5", title: "洞窟探索" }
+		{ id: "073E292D3BB9B5D4", title: "新たな場所" }
+		{ id: "05FE856232C74F87", title: "文明の復興" }
+	]
+}
