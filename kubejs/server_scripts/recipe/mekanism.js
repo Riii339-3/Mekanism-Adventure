@@ -8,10 +8,41 @@ ServerEvents.recipes(ev => {
           'ABA'
         ],
         {
-          A: 'minecraft:iron_ingot',
+          A: 'mekanism_extras:absolute_control_circuit',
           B: 'minecraft:furnace',  //arg 3: the mapping object
-          C: '#mekanism:alloys/infused',
-          D: "mekanism:steel_casing"
+          C: '#mekanism_extras:alloys/radiance',
+          D: 'energizedpower:reinforced_advanced_machine_frame'
         }
       )
+    ev.remove({output:"mekanism:electric_pump"})
+    ev.shaped(
+      Item.of("mekanism:electric_pump",1),
+      [
+        " B ",
+        "CDC",
+        "AAA"
+      ],
+      {
+        A:"#forge:ingots/osmium",
+        B:"minecraft:bucket",
+        C:"#mekanism:alloys/infused",
+        D:"mekanism:steel_casing"
+      }
+    )
+  ev.remove({output:"mekanism:rotary_condensentrator"})
+  ev.shaped(
+    Item.of("mekanism:rotary_condensentrator"),
+    [
+      "ABA",
+      "CDE",
+      "ABA"
+    ],
+    {
+      A:"mekanism:energy_tablet",
+      B:"mekanism:basic_control_circuit",
+      C:"mekanism:basic_chemical_tank",
+      D:"mekanism:steel_casing",
+      E:"mekanism:basic_fluid_tank"
+    }
+  )
 })
