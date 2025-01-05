@@ -1,0 +1,78 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2C238A13C00BC4F1"
+	group: "073E292D3BB9B5D4"
+	id: "2C238A13C00BC4F1"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "093FBD188F2D3034"
+			invisible: true
+			tasks: [{
+				id: "4968D514093023F3"
+				item: "kubejs:machine_paper/mekanism/metallurgic_infuser"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			id: "7A6C95A56D16AC66"
+			invisible: true
+			tasks: [{
+				id: "21CDF3CD6597130F"
+				item: "kubejs:machine_paper/mekanism/enrichment_chamber"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			id: "4CEB93CAFF934949"
+			invisible: true
+			tasks: [{
+				id: "0ECC027CCFA8445F"
+				item: "kubejs:machine_paper/mekanism/osmium_compressor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "50EFB30C45E0D66A"
+			invisible: true
+			tasks: [{
+				id: "4897DE5D59728EEF"
+				item: "kubejs:machine_paper/mekanism/crusher"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			id: "52C15F3FF3FB4C98"
+			invisible: true
+			tasks: [{
+				id: "35BAB872264C86B1"
+				item: "kubejs:machine_paper/mekanism/purification_chamber"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			id: "6AA5D04C201F672B"
+			invisible: true
+			tasks: [{
+				id: "0DCBDAE30117E664"
+				item: "kubejs:machine_paper/mekanismgenerators/heat_generator"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+	]
+	title: "古代文明解明記録"
+}

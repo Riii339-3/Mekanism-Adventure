@@ -1,0 +1,396 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "64606F74379CC30F"
+	group: "05FE856232C74F87"
+	hide_quest_until_deps_visible: true
+	icon: "mekanism:basic_control_circuit"
+	id: "64606F74379CC30F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["61673108FA046533"]
+			hide_until_deps_complete: true
+			id: "2021ABF57816C3D6"
+			size: 3.0d
+			subtitle: "古代文明が遺したもの"
+			tasks: [{
+				id: "6F3A7182C5892FDD"
+				item: "kubejs:machine_paper/mekanism/metallurgic_infuser"
+				type: "item"
+			}]
+			title: "最初の設計図"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A3F845D933B1E62"]
+			id: "391FA01953CAED90"
+			subtitle: "今もある合金炉"
+			tasks: [{
+				id: "18C76EF8C84C5B3D"
+				item: "energizedpower:alloy_furnace"
+				type: "item"
+			}]
+			title: "機械を作るために"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2021ABF57816C3D6"]
+			id: "4A3F845D933B1E62"
+			subtitle: "村人曰く、これで作れるらしい"
+			tasks: [
+				{
+					count: 4L
+					id: "7C6D471DC1E23F7B"
+					item: { Count: 4, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "616101A77F850E22"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:coals)"
+						}
+					}
+					title: "Any #minecraft:coals"
+					type: "item"
+				}
+			]
+			title: "資源をさらに"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["391FA01953CAED90"]
+			hide_until_deps_complete: true
+			id: "0376A56CA6137938"
+			rewards: [{
+				id: "62783813C781DF15"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "これで自給自足できる！"
+			tasks: [{
+				id: "573A99DC837F79D2"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			title: "鋼だ！鋼だああああ！"
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0376A56CA6137938"]
+			id: "074FA368F0B770BF"
+			subtitle: "鋼鉄からできてるし、鋼鉄ケーシングと名付けよう"
+			tasks: [{
+				id: "07E37338D9132C9D"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			title: "機械の基礎"
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["02DFD6762FE277AB"]
+			id: "341617C47945F16F"
+			size: 2.0d
+			subtitle: "赤くしたい…"
+			tasks: [{
+				id: "71957F19972D39F3"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			title: "薄赤色の合金"
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["391FA01953CAED90"]
+			id: "02DFD6762FE277AB"
+			tasks: [
+				{
+					count: 8L
+					id: "30F94C15DECDF819"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:dusts/redstone)"
+						}
+					}
+					title: "Any #forge:dusts/redstone"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "07AE48E81002A715"
+					item: { Count: 4, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "もう一つの合金"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			id: "2DCC17751D71FDA3"
+			subtitle: "カンカンカン！カンカンカン！"
+			tasks: [
+				{
+					id: "37C8A1BCA03534AB"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/hammers)"
+						}
+					}
+					title: "Any #aether:tools/hammers"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0FC606B4E97F56D3"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:plates/steel)"
+						}
+					}
+					title: "Any #forge:plates/steel"
+					type: "item"
+				}
+			]
+			title: "金属をカン！"
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"074FA368F0B770BF"
+				"341617C47945F16F"
+			]
+			hide_until_deps_complete: true
+			id: "6F946C4470EA5847"
+			size: 3.0d
+			subtitle: "動かし方！わからん！"
+			tasks: [{
+				id: "61AC3A806366C3A2"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			title: "初めての機械"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6F946C4470EA5847"]
+			description: [
+				"最初に作った鋼鉄、合金、そして回路は今後も永遠に作り続けます。"
+				"空き時間があればたくさん作っておくのが吉"
+				""
+				"もしかしてあなた大凶でした？"
+			]
+			hide_until_deps_complete: true
+			id: "36BE02FBB5D8DACB"
+			subtitle: "レッドストーンが燃料か！"
+			tasks: [{
+				id: "5F99BA61472AE90C"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			title: "始まり"
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["36BE02FBB5D8DACB"]
+			hide_until_deps_complete: true
+			id: "2A345C64F77E88C8"
+			subtitle: "かまど燃料と同じだ！"
+			tasks: [{
+				id: "1DB3B67EBBEB86E1"
+				item: "energizedpower:coal_engine"
+				type: "item"
+			}]
+			title: "最初の発電機"
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"36BE02FBB5D8DACB"
+				"50EFB30C45E0D66A"
+			]
+			hide_until_deps_complete: true
+			id: "04E8F185BC926F21"
+			subtitle: "イッキ！イッキ！"
+			tasks: [{
+				id: "3E52184E978603FE"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			title: "鉱石を砕く"
+			x: 1.5d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"36BE02FBB5D8DACB"
+				"7A6C95A56D16AC66"
+			]
+			hide_until_deps_complete: true
+			id: "234507E0FCE27F90"
+			subtitle: "液体にまでしちゃえ(この後無理だとわかった)"
+			tasks: [{
+				id: "12D12D9318AEEA70"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			title: "濃くしてみる"
+			x: -1.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["234507E0FCE27F90"]
+			id: "3227DAE5E8429B88"
+			subtitle: "でも濃いから冶金に入れる量が増えた！"
+			tasks: [{
+				id: "4C4ED88F196751BC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mekanism:enriched)"
+					}
+				}
+				title: "Any #mekanism:enriched"
+				type: "item"
+			}]
+			title: "液体はむりそう"
+			x: -2.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["04E8F185BC926F21"]
+			id: "15EC531253029AA4"
+			subtitle: "サラサラになったよ！"
+			tasks: [{
+				id: "4702BCB9FA0458CA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/iron"
+					}
+				}
+				title: "Any #forge:dusts"
+				type: "item"
+			}]
+			title: "鉱石を砕いてみた"
+			x: 2.5d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"2A345C64F77E88C8"
+				"6AA5D04C201F672B"
+			]
+			id: "4FB4B23B50B4B58D"
+			subtitle: "つまり周りに溶岩を置けばいい…ってコト！？"
+			tasks: [{
+				id: "455003F9FE3B24DF"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			title: "熱で発電できるっぽい"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["36BE02FBB5D8DACB"]
+			hide_until_deps_complete: true
+			id: "4D46B6A30C6B5D10"
+			subtitle: "資源の有効活用"
+			tasks: [{
+				id: "499C23C9EF6C083E"
+				item: "mekanism:precision_sawmill"
+				type: "item"
+			}]
+			title: "加工量をもっと！"
+			x: -2.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["36BE02FBB5D8DACB"]
+			id: "1B334369239BDDD3"
+			subtitle: "おまっ。イカスミとグロウストーンが一緒になっちゃったぞ。これは一体、どうなっちまうんだ～～～？？"
+			tasks: [{
+				id: "039406C84ADA5F8D"
+				item: "mekanism:combiner"
+				type: "item"
+			}]
+			title: "イカスミです。グロウストーンです。合体！"
+			x: 2.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["1B334369239BDDD3"]
+			id: "181C821D1ABA7FB7"
+			subtitle: "ダメーーー！"
+			tasks: [{
+				id: "34AE631F8FEB35F7"
+				item: "minecraft:glow_ink_sac"
+				type: "item"
+			}]
+			title: "輝いて～♪"
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["4D46B6A30C6B5D10"]
+			id: "7813EC45F67A275C"
+			subtitle: "粉砕機に入れないの？"
+			tasks: [{
+				count: 4L
+				id: "04C8D5D2987DFE7A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:dusts/wood)"
+					}
+				}
+				title: "Any #forge:dusts/wood"
+				type: "item"
+			}]
+			title: "木の粉"
+			x: -4.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["7813EC45F67A275C"]
+			id: "23822E349B996446"
+			subtitle: "持ち運び便利！"
+			tasks: [{
+				id: "4E690BE9BD443DB1"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
+			title: "輸送に便利！"
+			x: -5.5d
+			y: 14.5d
+		}
+	]
+	title: "復活"
+}

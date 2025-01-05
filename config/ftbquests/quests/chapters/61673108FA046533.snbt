@@ -10,7 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["614EB3595D7A6855"]
+			dependencies: ["127C58D4F0FD0623"]
 			description: [
 				"地下へ行く方法はたくさんあるが、おすすめは&l採掘すること&rと&l洞窟に行くこと&rだ。"
 				"採掘場は拠点近くに作ることができるので楽に行き来できる。"
