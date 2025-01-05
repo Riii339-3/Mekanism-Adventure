@@ -10,7 +10,8 @@ ServerEvents.recipes(ev => {
         {
           A: 'minecraft:iron_ingot',
           B: 'minecraft:furnace',  //arg 3: the mapping object
-          C: 'minecraft:granite'
+          C: '#mekanism:alloys/infused',
+          D: "mekanism:steel_casing"
         }
       )
 })
