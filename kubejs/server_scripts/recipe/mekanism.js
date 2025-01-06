@@ -45,4 +45,19 @@ ServerEvents.recipes(ev => {
       E:"mekanism:basic_fluid_tank"
     }
   )
+  ev.remove({output:'mekanism:teleportation_core'})
+  ev.shaped(
+    Item.of('mekanism:teleportation_core', 1),
+    [
+      "ABA",
+      "CDC",
+      "ABA"
+    ],
+    {
+      A:"minecraft:lapis_lazuli",
+      B:'mekanism_extras:alloy_radiance',
+      C:"#forge:ingots/gold",
+      D:"minecraft:diamond"
+    }
+  )
 })

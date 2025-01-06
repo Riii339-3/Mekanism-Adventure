@@ -1,6 +1,6 @@
 {
     "block.mbd2.carbon_furnace":"コークス炉",
     "mbd2.carbon_furnace":"コークス炉",
-    "block.mbd2.circuit_crafter":"回路製造所",
+    "block.mbd2.circuit_crafter":"回路製造所コントローラー",
     "mbd2.recipe_type":"回路製造所"
 }
