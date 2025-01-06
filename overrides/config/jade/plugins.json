@@ -51,6 +51,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "mekanismcovers": {
+    "cover_component": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -94,9 +97,6 @@
     "crafting_core": true,
     "advanced_auto_table": true,
     "compressor": true
-  },
-  "ars_nouveau": {
-    "mob_jar": true
   },
   "jadeaddons": {
     "equipment_requirement": ""
