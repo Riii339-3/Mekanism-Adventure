@@ -8,10 +8,10 @@ ServerEvents.recipes(ev => {
           'ABA'
         ],
         {
-          A: 'mekanism_extras:absolute_control_circuit',
-          B: 'minecraft:furnace',  //arg 3: the mapping object
-          C: '#mekanism_extras:alloys/radiance',
-          D: 'energizedpower:reinforced_advanced_machine_frame'
+          A: 'mekanism:ultimate_control_circuit',
+          B: 'energizedpower:advanced_powered_furnace',  //arg 3: the mapping object
+          C: '#mekanism:alloys/atomic',
+          D: "energizedpower:advanced_machine_frame"
         }
       )
     ev.remove({output:"mekanism:electric_pump"})

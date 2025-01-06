@@ -137,10 +137,36 @@ ServerEvents.recipes(event => {
             "cast_consumed": true,
             "cooling_time": 114,
             "fluid": {
-              "amount": 100,
+              "amount": 90,
               "tag": "tconstruct:molten_diamond"
             },
             "result": "mekanism:alloy_reinforced"
+          }
+    )
+    event.custom(
+        {
+            "type": "tconstruct:casting_table",
+            "cast": {
+              "item": "energizedpower:basic_machine_frame"
+            },
+            "cast_consumed": true,
+            "cooling_time": 120,
+            "fluid": {
+              "amount": 180,
+              "tag": "tconstruct:molten_steel"
+            },
+            "result": "mekanism:steel_casing"
+          }
+    )
+    event.custom(
+        {
+            "type": "tconstruct:casting_table",
+            "cooling_time": 20,
+            "fluid": {
+              "amount": 90,
+              "tag": "forge:molten_carbon"
+            },
+            "result": "kubejs:carbon"
           }
     )
 })
